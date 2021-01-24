@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <h2>CALCULATOR</h2>
+        <input type="text" maxlength="15" class="display"><br>
+        <div class="calculator">
+             
+            <input type="button" value="C" onclick="clearAll()">
+            <input type="button" value="+/-" onclick="negClicked()">
+            <input type="button" value="%" onclick="digitClicked(value)">
+            <input type="button" value="/" class="operator" onclick="digitClicked(value)">
+            <br>
+
+            <input type="button" value="7" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="8" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="9" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="*" class="operator" onclick="digitClicked(value)">
+            <br>
+            
+            <input type="button" value="4" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="5" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="6" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="-" class="operator" onclick="digitClicked(value)">
+            <br>
+            
+            <input type="button" value="1" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="2" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="3" onclick="digitClicked(value)">
+            <input type="button" value="+" class="operator" onclick="digitClicked(value)">
+            <br>
+            
+            <input type="button" value="0" class="digit" onclick="digitClicked(value)">
+            <input type="button" value="." class="digit" onclick="digitClicked(value)">
+            <input type="button" value="DEL" onclick="delClicked()">
+            <input type="button" value="=" class="eql" onclick="equalClicked()">
+            <br>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
